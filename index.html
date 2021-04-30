@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  <title>Bac à sable</title>
+
+  <!-- <link href="./assets/bootstrap.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="./style.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript" ></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-fixed">
+      <h1 class="logo">Indicateur de scroll</h1>
+    </div>
+    <div class="scroll"></div>
+  </header>
+
+  <div class="contenu">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ab tempore ad praesentium beatae consequuntur voluptates, voluptatum dignissimos error corporis quia nulla reprehenderit quod qui vel suscipit ut nam! Perferendis.</p>
+  </div>
+
+<script>
+
+$(window).scroll(function(){
+
+    var wintop = $(window).scrollTop(), //position
+
+    docheight = $(document).height(),   //hauteur du document
+
+    winheight = $(window).height(); //hauteur de la fenêtre
+
+    var scrolled = (wintop/(docheight-winheight))*100;
+
+    $('.scroll').css('width',(scrolled + '%'));
+
+})
+</script>
+   
+
+
+ 
+  <script src="./assets/bootstrap.js" type="text/javascript" ></script>
+  <script src="./script.js" type="text/javascript" ></script>
+</body>
+
+
+
+</html>
